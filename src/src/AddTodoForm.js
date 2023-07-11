@@ -1,27 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function AddTodoForm ({ onAddTodo}) {
-    const handleAddTodo = (event) => {
-        event.preventDefault();
-        const todoTitle = event.target.title.value;
-        onAddTodo(todoTitle);
-        event.target.reset();
+function AddTodoForm({ onAddTodo }) {
+  const [todoTitle, setTodoTitle] = useState('');
+
+  const handleAddTodo = (event) => {
+    event.preventDefault();
+    const newTodo = {
+      title: todoTitle,
+      id: Date.now(),
     };
+    onAddTodo(newTodo);
+    setTodoTitle('');
+  };
 
-    return (
-       <form onSubmit={handleAddTodo}>
-        <ul>
-            <div>
-                <label htmlFor="title">Title: </label>
-                <input id="title" type="text" />
-            </div>
-            <div className="button">
-                <button type="submit" style={{backgroundColor: "steelblue", color:"white", borderRadius: "5px", marginTop: "10px"}}>Add Todo</button>
-            </div>
-        </ul>
-        
-       </form> 
-    );
+  const handleTitleChange = (event) => {
+    const newTodoTitle = event.target.value;
+    setTodoTitle(newTodoTitle);
+  };
+
+  return (
+    <form onSubmit={handleAddTodo}>
+      <div>
+        <label htmlFor="title">Title: </label>
+        <input
+          id="title"
+          type="text"
+          value={todoTitle}
+          onChange={handleTitleChange}
+        />
+      </div>
+      <div className="button">
+        <button
+          type="submit"
+          style={{
+            backgroundColor: 'steelblue',
+            color: 'white',
+            borderRadius: '5px',
+            marginTop: '10px',
+          }}
+        >
+          Add Todo
+        </button>
+      </div>
+    </form>
+  );
 }
 
 export default AddTodoForm;
