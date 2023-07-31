@@ -1,7 +1,7 @@
 # React Todo List Project
 This project shows how to create a simple Todo List app with React using various coding assignments. The project uses one repository, but each assignment has a separate branch. The assignments cover the following topics:
 
-##### [Lesson 1.1: Project Setup and React Basics]
+##### <a href="https://github.com/fitsumtsehay/react-todo/branches" target="_blank" rel="nofollow">[Lesson 1.1: Project Setup and React Basics]</a>
 ##### [Lesson 1.2: React DOM and Components]
 ##### [Lesson 1.3: Props, State, and Handlers]
 ##### [Lesson 1.4: Lifting State and Props Handling]
