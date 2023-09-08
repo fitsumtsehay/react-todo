@@ -1,0 +1,17 @@
+/* Your CSS file or a <style> tag in your HTML */
+.todo-list-item {
+  display: flex;
+  justify-content: space-between; /* change from flex-start */
+  align-items: center;
+  margin-bottom: 2px;
+  flex-direction: row;
+  width: 265px; 
+}
+
+.action-button {
+  background-color: steelblue;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
