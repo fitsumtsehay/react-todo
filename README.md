@@ -1,5 +1,5 @@
 # React Todo List Project
-This project shows how to create a simple Todo List app with React using various coding assignments. The project uses one repository, but each assignment has a separate branch. The assignments cover the following topics:
+This project demonstrates how to create a simple Todo List app with React using various coding assignments. The project uses one repository, but each assignment has a separate branch. The assignments cover the following topics:
 
 ##### <a href="https://github.com/fitsumtsehay/react-todo/branches" target="_blank" rel="nofollow">[Lesson 1.1: Project Setup and React Basics]</a>
 ##### <a href="https://github.com/fitsumtsehay/react-todo/branches" target="_blank" rel="nofollow">[Lesson 1.2: React DOM and Components]</a>
